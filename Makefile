@@ -22,7 +22,7 @@ SRC = so_long.c get_next_line/get_next_line.c get_next_line/get_next_line_utils.
 SRCB = bonusfile/so_long_bonus.c bonusfile/get_next_line_bonus/get_next_line_bonus.c \
        bonusfile/get_next_line_bonus/get_next_line_utils_bonus.c bonusfile/map_parsing_bonus.c \
        bonusfile/map_parsing2_bonus.c bonusfile/placing_images_bonus.c \
-       bonusfile/movment_bonus.c bonusfile/map_parsing3_bonus.c bonus_file/flood_fill_bonus.c
+       bonusfile/movment_bonus.c bonusfile/map_parsing3_bonus.c bonusfile/flood_fill_bonus.c
 libs = ./libft/libft.a printf/libftprintf.a
 
 OBJ = $(SRC:.c=.o)
