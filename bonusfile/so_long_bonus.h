@@ -26,7 +26,7 @@
 # define LEFT 0
 # define RIGHT 2
 # define MAX_WIDTH 204
-# define MAX_HEIGHT 35
+# define MAX_HEIGHT 34
 
 typedef struct s_game
 {
