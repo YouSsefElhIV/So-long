@@ -88,16 +88,16 @@ void	flood_fill(char **tab, t_game *game)
 		j = 0;
 		while (j < game->width)
 		{
-			if ((game->map[i][j] == 'C' && tab[i][j] != 'F') \
-			|| (game->map[i][j] == 'E' && tab[i][j] != 'F'))
+			if (game->map[i][j] == 'E' && tab[i][j] != 'F')
 			{
-				write(2, "ERROR!\nACCESS\n", 14);
+				write(2, "ERROR!\nNO ACCESS TO EXIT\n", 25);
 				exit (1);
 			}
 			j++;
 		}
 		i++;
 	}
+	flood_fill_for_coins(game);
 }
 
 void	check_access(t_game *game)
