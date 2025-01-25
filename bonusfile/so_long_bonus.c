@@ -69,7 +69,7 @@ int	key_count(int keycode, t_game *game)
 		sprintf(count_str, "Move count: %i", ++count);
 		if (game->end == 1)
 			exit(0);
-		mlx_string_put(game->mlx, game->mlx_window, 10, 690, 0xFF00, count_str);
+		put_str_to_screen(game, count_str);
 		put_images_in_game(game);
 	}
 	return (1);
