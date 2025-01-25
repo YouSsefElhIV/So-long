@@ -73,5 +73,6 @@ void	set_dim(t_game *game, int i, int j);
 void	check_for_new_line(char *copy);
 void	check_extension(char *av);
 void	check_imgs(t_game *game);
+void	put_str_to_screen(t_game *game, char *count_str);
 
 #endif
