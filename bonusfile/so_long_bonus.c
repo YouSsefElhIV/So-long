@@ -100,7 +100,7 @@ int	main(int ac, char **av)
 		check_imgs(&game);
 		initialize_images(&game);
 		mlx_hook(game.mlx_window, 17, 0, exit_window, &game);
-		mlx_string_put(game.mlx, game.mlx_window, 350, 680, \
+		mlx_string_put(game.mlx, game.mlx_window, 540, game.height * 40, \
 		0xFF0000, "press w/s/a/d to start");
 		mlx_key_hook(game.mlx_window, key_count, &game);
 		mlx_loop_hook(game.mlx, update_frame, &game);
