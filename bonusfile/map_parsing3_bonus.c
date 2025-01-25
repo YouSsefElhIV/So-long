@@ -79,3 +79,9 @@ void	check_imgs(t_game *game)
 		exit (1);
 	}
 }
+
+void	put_str_to_screen(t_game *game, char *count_str)
+{
+	mlx_string_put(game->mlx, game->mlx_window, 30, \
+	game->height * 40, 0x9DFFD, count_str);
+}
